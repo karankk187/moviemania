@@ -10,80 +10,69 @@
    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
    <!-- SWIPER CSS -->
-   <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="swiper-bundle.min.css">
 
    <!-- MAIN CSS -->
    <link rel="stylesheet" href="styles.css">
 
-   <title>MovieMania – Premium Cinematic</title>
+   <title>Responsive Movies Website</title>
 </head>
 
 <body>
 
-   <!-- Background -->
-   <img src="hitman_bg.jpeg" class="bg__image" alt="">
+   <img src="hitman_bg.jpeg" alt="image" class="bg__image">
    <div class="bg__blur"></div>
 
    <!-- HEADER -->
    <header class="header" id="header">
       <div class="header__content">
-
          <a href="#" class="header__logo">MOVIEMANIA</a>
-
-         <form action="" class="header__search">
-            <i class="ri-search-line"></i>
-            <input type="search" placeholder="Search movies" class="header__input">
-         </form>
 
          <div class="header__actions">
             <i class="ri-notification-2-line"></i>
             <i class="ri-account-circle-line"></i>
 
-            <!-- Theme Toggle -->
-            <button class="theme-toggle" id="theme-toggle">
-               <i class="ri-sun-line" id="theme-icon"></i>
-            </button>
-
-            <!-- Mobile Menu Trigger -->
             <div class="header__menu" id="header-menu">
                <i class="ri-menu-line"></i>
             </div>
          </div>
       </div>
+
+      <form action="" class="header__search">
+         <i class="ri-search-line"></i>
+         <input type="search" placeholder="Search movies" class="header__input">
+      </form>
    </header>
 
-   <!-- NAV MENU -->
+   <!-- NAVBAR -->
    <nav class="nav" id="nav">
-
       <div class="nav__menu">
-         <a class="nav__logo" href="#">MOVIEMANIA</a>
+         <a href="#" class="nav__logo">MOVIEMANIA</a>
 
          <ul class="nav__list">
-
             <li class="nav__item">
                <a href="#" class="nav__link">
-                  <i class="ri-home-5-line"></i> Home
+                  <i class="ri-home-5-line"></i> <span>Home</span>
                </a>
             </li>
 
             <li class="nav__item">
                <a href="#trending" class="nav__link">
-                  <i class="ri-send-plane-fill"></i> Trending
+                  <i class="ri-send-plane-fill"></i> <span>Trending</span>
                </a>
             </li>
 
             <li class="nav__item">
                <a href="#popular" class="nav__link">
-                  <i class="ri-fire-line"></i> Popular
+                  <i class="ri-fire-line"></i> <span>Popular</span>
                </a>
             </li>
 
             <li class="nav__item">
                <a href="#Favorites" class="nav__link">
-                  <i class="ri-heart-3-line"></i> Favorites
+                  <i class="ri-heart-3-line"></i> <span>Favorites</span>
                </a>
             </li>
-
          </ul>
 
          <div>
@@ -91,7 +80,7 @@
             <ul class="nav__list">
                <li class="nav__item">
                   <a href="#" class="nav__link">
-                     <i class="ri-account-circle-line"></i> Profile
+                     <i class="ri-account-circle-line"></i> <span>Profile</span>
                   </a>
                </li>
             </ul>
@@ -99,86 +88,65 @@
       </div>
 
       <a href="#" class="nav__link">
-         <i class="ri-logout-box-line"></i> Log Out
+         <i class="ri-logout-box-line"></i> <span>Log Out</span>
       </a>
 
       <div class="nav__close" id="nav-close">
          <i class="ri-close-line"></i>
       </div>
-
    </nav>
 
    <!-- MAIN CONTENT -->
    <main class="main">
 
-      <!-- BANNER -->
+      <!-- Banner -->
       <section class="banner">
          <article class="banner__card">
-            <a href="https://www.imdb.com/title/tt8385148/"
-               target="_blank"
-               class="banner__link"
-               data-trailer="https://www.youtube.com/embed/EfyCX2d7I5E">
-
-               <img src="hitman_bg.jpeg" class="banner__img" alt="">
+            <a href="https://www.imdb.com/title/tt8385148/" target="_blank" class="banner__link">
+               <img src="hitman_bg.jpeg" alt="image" class="banner__img">
                <div class="banner__shadow"></div>
 
                <div class="banner__data">
                   <h2 class="banner__title">Hitman Wife's Bodyguard</h2>
-                  <span class="banner__category">Action / Comedy</span>
+                  <span class="banner__category">Action/Comedy</span>
                </div>
             </a>
          </article>
       </section>
 
-      <!-- TRENDING -->
+      <!-- Trending Section -->
       <section class="new">
          <h3 class="card__title" id="trending">Trending</h3>
 
          <div class="new__swiper swiper">
             <div class="swiper-wrapper">
 
-               <!-- Single card -->
                <article class="new__card card__article swiper-slide">
-                  <a href="https://www.imdb.com/title/tt0870154/"
-                     target="_blank"
-                     class="card__link"
-                     data-trailer="https://www.youtube.com/embed/f_HvoipFcA8">
-
-                     <img src="t01.jpeg" class="card__img" alt="">
+                  <a href="https://www.imdb.com/title/tt0870154/" target="_blank" class="card__link">
+                     <img src="t01.jpeg" class="card__img">
                      <div class="card__shadow"></div>
-
                      <div class="new__data card__data">
                         <h3 class="card__name">Jungle Cruise</h3>
-                        <span class="card__category">Adventure / Comedy</span>
+                        <span class="card__category">Adventure/Comedy</span>
                      </div>
                   </a>
                </article>
 
                <article class="new__card card__article swiper-slide">
-                  <a href="https://www.imdb.com/title/tt10872600/"
-                     target="_blank"
-                     class="card__link"
-                     data-trailer="https://www.youtube.com/embed/rt-2cxAiPJk">
-
-                     <img src="t02.jpeg" class="card__img" alt="">
+                  <a href="https://www.imdb.com/title/tt10872600/" target="_blank" class="card__link">
+                     <img src="t02.jpeg" class="card__img">
                      <div class="card__shadow"></div>
-
                      <div class="new__data card__data">
                         <h3 class="card__name">Spiderman</h3>
-                        <span class="card__category">Sci-Fi / Action</span>
+                        <span class="card__category">Sci-fi/Action</span>
                      </div>
                   </a>
                </article>
 
                <article class="new__card card__article swiper-slide">
-                  <a href="https://www.imdb.com/title/tt10919420/"
-                     target="_blank"
-                     class="card__link"
-                     data-trailer="https://www.youtube.com/embed/oqxAJKy0ii4">
-
-                     <img src="t03.jpeg" class="card__img" alt="">
+                  <a href="https://www.imdb.com/title/tt10919420/" target="_blank" class="card__link">
+                     <img src="t03.jpeg" class="card__img">
                      <div class="card__shadow"></div>
-
                      <div class="new__data card__data">
                         <h3 class="card__name">Squid Game</h3>
                         <span class="card__category">Thriller</span>
@@ -187,28 +155,44 @@
                </article>
 
                <article class="new__card card__article swiper-slide">
-                  <a href="https://www.imdb.com/title/tt8385148/"
-                     target="_blank"
-                     class="card__link"
-                     data-trailer="https://www.youtube.com/embed/EfyCX2d7I5E">
-
-                     <img src="t04.jpeg" class="card__img" alt="">
+                  <a href="https://www.imdb.com/title/tt8385148/" target="_blank" class="card__link">
+                     <img src="t04.jpeg" class="card__img">
                      <div class="card__shadow"></div>
-
                      <div class="new__data card__data">
                         <h3 class="card__name">Hitman Wife's</h3>
-                        <span class="card__category">Action / Comedy</span>
+                        <span class="card__category">Action/Comedy</span>
+                     </div>
+                  </a>
+               </article>
+
+               <article class="new__card card__article swiper-slide">
+                  <a href="https://www.imdb.com/title/tt0803096/" target="_blank" class="card__link">
+                     <img src="t05.jpg" class="card__img">
+                     <div class="card__shadow"></div>
+                     <div class="new__data card__data">
+                        <h3 class="card__name">Warcraft</h3>
+                        <span class="card__category">Action/Sci-fi</span>
+                     </div>
+                  </a>
+               </article>
+
+               <article class="new__card card__article swiper-slide">
+                  <a href="https://www.imdb.com/title/tt4425200/" target="_blank" class="card__link">
+                     <img src="t06.jpg" class="card__img">
+                     <div class="card__shadow"></div>
+                     <div class="new__data card__data">
+                        <h3 class="card__name">John Wick II</h3>
+                        <span class="card__category">Action</span>
                      </div>
                   </a>
                </article>
 
             </div>
          </div>
-
          <div class="swiper-pagination"></div>
       </section>
 
-      <!-- POPULAR -->
+      <!-- Popular -->
       <section class="movie" id="popular">
          <h3 class="card__title">Popular</h3>
 
@@ -216,32 +200,74 @@
             <div class="swiper-wrapper">
 
                <article class="card__article swiper-slide">
-                  <a href="https://www.imdb.com/title/tt9140554/"
-                     target="_blank"
-                     class="card__link"
-                     data-trailer="https://www.youtube.com/embed/nW948Va-l10">
-
-                     <img src="m01.jpeg" class="card__img" alt="">
+                  <a href="https://www.imdb.com/title/tt9140554/" target="_blank" class="card__link">
+                     <img src="m01.jpeg" class="card__img">
                      <div class="card__shadow"></div>
                      <div class="card__data">
-                        <h3>Loki</h3>
-                        <span>Sci-Fi</span>
+                        <h3 class="card__name">Loki</h3>
+                        <span class="card__category">Sci-fi</span>
                      </div>
+                     <i class="ri-heart-3-line card__like"></i>
                   </a>
                </article>
 
                <article class="card__article swiper-slide">
-                  <a href="https://www.imdb.com/title/tt0800369/"
-                     target="_blank"
-                     class="card__link"
-                     data-trailer="https://www.youtube.com/embed/JOddp-nlNvQ">
-
-                     <img src="m02.jpg" class="card__img" alt="">
+                  <a href="https://www.imdb.com/title/tt0800369/" target="_blank" class="card__link">
+                     <img src="m02.jpg" class="card__img">
                      <div class="card__shadow"></div>
                      <div class="card__data">
-                        <h3>Thor</h3>
-                        <span>Sci-Fi</span>
+                        <h3 class="card__name">Thor</h3>
+                        <span class="card__category">Sci-fi</span>
                      </div>
+                     <i class="ri-heart-3-line card__like"></i>
+                  </a>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <a href="https://www.imdb.com/title/tt1211837/" target="_blank" class="card__link">
+                     <img src="m03.jpeg" class="card__img">
+                     <div class="card__shadow"></div>
+                     <div class="card__data">
+                        <h3 class="card__name">Doctor Strange</h3>
+                        <span class="card__category">Sci-fi</span>
+                     </div>
+                     <i class="ri-heart-3-line card__like"></i>
+                  </a>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <a href="https://www.imdb.com/title/tt10857164/" target="_blank" class="card__link">
+                     <img src="m04.jpg" class="card__img">
+                     <div class="card__shadow"></div>
+                     <div class="card__data">
+                        <h3 class="card__name">Ms. Marvel</h3>
+                        <span class="card__category">Sci-fi/Action</span>
+                     </div>
+                     <i class="ri-heart-3-line card__like"></i>
+                  </a>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <a href="https://www.imdb.com/title/tt3480822/" target="_blank" class="card__link">
+                     <img src="m05.jpg" class="card__img">
+                     <div class="card__shadow"></div>
+                     <div class="card__data">
+                        <h3 class="card__name">Black Widow</h3>
+                        <span class="card__category">Action/Thriller</span>
+                     </div>
+                     <i class="ri-heart-3-line card__like"></i>
+                  </a>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <a href="https://www.imdb.com/title/tt1477834/" target="_blank" class="card__link">
+                     <img src="m06.jpg" class="card__img">
+                     <div class="card__shadow"></div>
+                     <div class="card__data">
+                        <h3 class="card__name">Aquaman</h3>
+                        <span class="card__category">Sci-fi/Adventure</span>
+                     </div>
+                     <i class="ri-heart-3-line card__like"></i>
                   </a>
                </article>
 
@@ -249,33 +275,92 @@
          </div>
       </section>
 
-      <!-- FAVORITES -->
+      <!-- Favorites -->
       <section class="movies" id="Favorites">
-
-         <h1 class="card__title">Favorites</h1>
+         <div class="heading">
+            <h1>Favorites</h1>
+         </div>
 
          <div class="movie-cards movie_swiper swiper">
             <div class="swiper-wrapper">
 
                <div class="movie-card swiper-slide">
-                  <a href="https://www.imdb.com/title/tt1270797/"
-                     target="_blank"
-                     data-trailer="https://www.youtube.com/embed/u9Mv98Gr5pY">
-
-                     <img src="m1.jpg" alt="">
+                  <a href="https://www.imdb.com/title/tt1270797/" target="_blank">
+                     <img src="m1.jpg" alt="" />
                      <h1>Venom</h1>
                      <h2>120 Min | Action</h2>
                   </a>
                </div>
 
                <div class="movie-card swiper-slide">
-                  <a href="https://www.imdb.com/title/tt5013056/"
-                     target="_blank"
-                     data-trailer="https://www.youtube.com/embed/F-eMt3SrfFU">
-
-                     <img src="m2.jpg" alt="">
+                  <a href="https://www.imdb.com/title/tt5013056/" target="_blank">
+                     <img src="m2.jpg" alt="" />
                      <h1>Dunkirk</h1>
                      <h2>120 Min | Adventure</h2>
+                  </a>
+               </div>
+
+               <div class="movie-card swiper-slide">
+                  <a href="https://www.imdb.com/title/tt2975590/" target="_blank">
+                     <img src="m3.jpg" alt="" />
+                     <h1>Batman Vs Superman</h1>
+                     <h2>120 Min | Thriller</h2>
+                  </a>
+               </div>
+
+               <div class="movie-card swiper-slide">
+                  <a href="https://www.imdb.com/title/tt4425200/" target="_blank">
+                     <img src="m4.jpg" alt="" />
+                     <h1>John Wick : Chapter 2</h1>
+                     <h2>120 Min | Adventure</h2>
+                  </a>
+               </div>
+
+               <div class="movie-card swiper-slide">
+                  <a href="https://www.imdb.com/title/tt1477834/" target="_blank">
+                     <img src="m5.jpg" alt="" />
+                     <h1>Aquaman</h1>
+                     <h2>120 Min | Action</h2>
+                  </a>
+               </div>
+
+               <div class="movie-card swiper-slide">
+                  <a href="https://www.imdb.com/title/tt1825683/" target="_blank">
+                     <img src="m6.jpg" alt="" />
+                     <h1>Black Panther</h1>
+                     <h2>120 Min | Action</h2>
+                  </a>
+               </div>
+
+               <div class="movie-card swiper-slide">
+                  <a href="https://www.imdb.com/title/tt0800369/" target="_blank">
+                     <img src="m7.jpg" alt="" />
+                     <h1>Thor</h1>
+                     <h2>120 Min | Action</h2>
+                  </a>
+               </div>
+
+               <div class="movie-card swiper-slide">
+                  <a href="https://www.imdb.com/title/tt4701182/" target="_blank">
+                     <img src="m8.png" alt="" />
+                     <h1>Bumblebee</h1>
+                     <h2>120 Min | Action</h2>
+                  </a>
+               </div>
+
+               <div class="movie-card swiper-slide">
+                  <a href="https://www.imdb.com/title/tt1571234/" target="_blank">
+                     <img src="m9.jpg" alt="" />
+                     <h1>Mortal Engines</h1>
+                     <h2>120 Min | Action</h2>
+                  </a>
+               </div>
+
+               <div class="movie-card swiper-slide">
+                  <a href="https://www.imdb.com/title/tt3717252/" target="_blank">
+                     <img src="m10.jpg" alt="" />
+                     <h1>Underworld Blood Wars</h1>
+                     <h2>120 Min | Action</h2>
                   </a>
                </div>
 
@@ -283,19 +368,18 @@
          </div>
       </section>
 
-      <!-- NEWSLETTER -->
-      <section class="newsletter">
-         <h1>Subscribe to Newsletter</h1>
-
+      <!-- Newsletter -->
+      <section class="newsletter" id="newsletter">
+         <h1>Subscribe To NewsLetter</h1>
          <div class="input-box">
-            <input type="text" placeholder="Enter Email">
-            <input type="button" class="btn" value="Subscribe">
+            <input type="text" placeholder="Enter Email" />
+            <input type="button" value="Subscribe" class="btn" />
          </div>
       </section>
 
-      <!-- FOOTER -->
+      <!-- Footer -->
       <section class="footer">
-         <img class="bg" src="hitman_bg.jpeg" alt="">
+         <img class="bg" src="hitman_bg.jpeg" alt="" />
          <div class="social-links">
             <i class="bx bxl-facebook"></i>
             <i class="bx bxl-instagram"></i>
@@ -306,25 +390,8 @@
 
    </main>
 
-   <!-- TRAILER MODAL -->
-   <div class="trailer-modal" id="trailer-modal" aria-hidden="true">
-      <div class="trailer-modal__backdrop" id="trailer-backdrop"></div>
-
-      <div class="trailer-modal__content">
-         <button class="trailer-modal__close" id="trailer-close">&times;</button>
-
-         <div class="trailer-modal__iframe">
-            <iframe id="trailer-iframe" allowfullscreen></iframe>
-         </div>
-
-         <div class="trailer-modal__error" id="trailer-error" hidden>
-            Trailer not available.
-         </div>
-      </div>
-   </div>
-
    <!-- SCRIPTS -->
-   <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+   <script src="swiper-bundle.min.js"></script>
    <script src="main.js"></script>
 
 </body>
