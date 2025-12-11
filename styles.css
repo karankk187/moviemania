@@ -316,3 +316,38 @@ img {
   gap: 1rem;
   font-size: 1.7rem;
 }
+/* ===== Permanent override to prevent image/viewport glitch =====
+   Paste this at the END of your styles.css (after everything).
+   This forces images to use natural height and ensures bg image
+   occupies full viewport without being forced to 300px.
+   ===== */
+img {
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform: translateZ(0) !important;
+  transform: translateZ(0) !important;
+}
+
+.bg__image {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  z-index: -1 !important;
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform: translateZ(0) !important;
+  transform: translateZ(0) !important;
+}
+
+/* If some other rule sets imgs to fixed 300px height by selector, add extra specificity */
+body img, .main img, .card__img, .banner__img, .movie-card img {
+  height: auto !important;
+}
