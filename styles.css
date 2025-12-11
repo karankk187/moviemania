@@ -600,3 +600,28 @@ input {
     font-size: var(--normal-font-size);
   }
 }
+/* ================================
+   FIX: Make entire movie card clickable
+   ================================ */
+
+.movie-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-card a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.movie-card img {
+  pointer-events: none; /* Prevent image blocking clicks */
+}
+
+.movie-card h1,
+.movie-card h2 {
+  pointer-events: none; /* Titles won't block links */
+}
