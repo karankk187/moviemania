@@ -88,3 +88,5 @@ const blurHeader = () =>{
                       : header.classList.remove('blur-header')
 }
 window.addEventListener('scroll', blurHeader)
+
+
